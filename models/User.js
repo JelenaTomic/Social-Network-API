@@ -5,7 +5,7 @@ const UserSchema = new Schema(
         username: {
             type: String,
             trim: true,
-            required: 'Username is required',
+            required: 'username is required',
             unique: true
         },
 
@@ -13,7 +13,7 @@ const UserSchema = new Schema(
             type: String,
             unique: true,
             match: [/.+@.+\..+/],
-            required: 'Password is required'
+            required: 'email is required'
         },
 
         thoughts: [

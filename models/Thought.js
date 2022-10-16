@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
-const ReactionSchema = require('./Reaction');
 const dateFormat = require('../utils/dateFormat');
+const ReactionSchema = require('./Reaction');
 
 const ThoughtSchema = new Schema(
     {
@@ -22,7 +22,7 @@ const ThoughtSchema = new Schema(
             required: 'Username is Required'
         },
 
-        reactions: [ReactionSchema]
+        reactions: [ ReactionSchema ]
 
     },
     {

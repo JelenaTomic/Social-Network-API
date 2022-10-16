@@ -22,7 +22,7 @@ const ThoughtSchema = new Schema(
             required: 'Username is Required'
         },
 
-        reactions: [ ReactionSchema ]
+        reactions: [ReactionSchema]
 
     },
     {
